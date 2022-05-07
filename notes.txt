@@ -1,0 +1,19 @@
+desiderata:
+
+1. while loop that won't stop 
+
+2. exception to make sure the delays of each iteration are set
+
+3. increment function to increase each part HH:MM:SS
+    be sure to set a limiter, then reset number to 00
+
+var HH = 0
+var MM = 0
+var SS = 0
+
+while (1=1){
+
+//check conditions if reset needed
+
+
+}
