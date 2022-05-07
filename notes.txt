@@ -7,13 +7,26 @@ desiderata:
 3. increment function to increase each part HH:MM:SS
     be sure to set a limiter, then reset number to 00
 
-var HH = 0
-var MM = 0
-var SS = 0
+4. if the clock is supposed to be displayed on a webpage with synced time, then there may have to be an API call.
+
+
+
+var HH = 00
+var MM = 00
+var SS = 00
 
 while (true){
 
 //check conditions if reset needed
-    if ()
+    if (SS == 60)
+    if (MM == 60)
+    if (HH == 24){
+        //i think in js, vars are not static
+        HH = 00
+        MM = 00
+        SS = 00
+
+
+    }
 
 }
