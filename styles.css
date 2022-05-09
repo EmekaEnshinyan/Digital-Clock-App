@@ -16,4 +16,13 @@ h2 {
     color:blue;
     background-color: darkolivegreen;
     font-size: 40px;
+    
+}
+p2 {
+    color:crimson;
+    font-size: 50px;
+    /*this may not work because within forms*/
+    column-count: 5;
+    border-color: rgb(240, 255, 241);
+    
 }
