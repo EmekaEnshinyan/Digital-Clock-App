@@ -1,25 +1,17 @@
-var HH = 00;
-var MM = 00;
-var SS = 00;
-var nom = document.getElementById("nominal");
 
 
-function clockTick() {
+function digitalClock(){
+    let date = new Date();
+    let hh = date.getHours()
+    let mm = date.getMinutes();
+    let ss = date.getSeconds();
     
-    nom.innerText = HH + ":" + MM + ":" + SS + 1;
-}
-setInterval(clockTick, 1000);
-
-//recursive function approach
-function clockTickRecursive(hour, minute, second){
-        if (hour == 24){  
-            return clockTickRecursive(hour = 0, minute = 0, second = 0);
-        } 
-        //else: run setinterval func
-        return clockTickRecursive(hour + 1, minute, second);
-        }
-
-let rec = clockTickRecursive(0,0,0);
-
-console.log(rec);
-console.log(nom);
+    let year = date.getYear();
+    let nominal = hh + ":" + mm + ":" + ss;
+    
+      document.getElementById("clock").innerText = nominal;
+       let clock = setTimeout(function(){digitalClock()}, 1000);
+      
+    document.getElementById("date").innerText = date;
+    }
+    digitalClock();
