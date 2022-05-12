@@ -22,8 +22,6 @@ if (hh < 10){
     nominal.innerText = time;
 }
 
-
-
 today.innerText = now;
 
 setInterval(clockTick, 1000);
